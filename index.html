@@ -41,26 +41,31 @@
             font-size: 14px;
         }
 
-        /* Botón */
+        /* Botón con imagen */
         .btn-tattoos {
-            background-color: black;
-            color: white;
+            display: inline-block;
             border: none;
-            padding: 12px 20px;
             cursor: pointer;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .btn-tattoos img {
+            width: 200px;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .btn-tattoos span {
+            display: block;
+            margin-top: 8px;
             font-size: 16px;
-            margin-bottom: 20px;
+            color: white;
         }
 
         .btn-tattoos:hover {
-            background-color: #222;
-        }
-
-        /* Imágenes */
-        .tattoo-img {
-            width: 200px;
-            margin: 10px;
-            border-radius: 10px;
+            transform: scale(1.05);
+            transition: 0.3s;
         }
     </style>
 </head>
@@ -75,34 +80,17 @@
     <main>
         <h2>Bienvenido</h2>
 
-        <!-- Botón -->
-        <button onclick="mostrarTattoos()" class="btn-tattoos">Tattoos</button>
+        <!-- Botón con imagen -->
+        <a href="tatuajes.html" class="btn-tattoos">
+            <img src="IMG_20230824_161153063.jpg" alt="Tattoos">
+            <span>Tattoos</span>
+        </a>
 
-        <!-- Sección oculta -->
-        <div id="seccion-tattoos" style="display: none;">
-            <h2>Tattoos</h2>
-
-            <img src="tattoo1.jpg" class="tattoo-img">
-            <img src="tattoo2.jpg" class="tattoo-img">
-            <img src="tattoo3.jpg" class="tattoo-img">
-        </div>
     </main>
 
     <footer>
         <p>© 2026 FISURAS S.A ® - Todos los derechos reservados</p>
     </footer>
-
-    <script>
-        function mostrarTattoos() {
-            var seccion = document.getElementById("seccion-tattoos");
-
-            if (seccion.style.display === "none") {
-                seccion.style.display = "block";
-            } else {
-                seccion.style.display = "none";
-            }
-        }
-    </script>
 
 </body>
 </html>
