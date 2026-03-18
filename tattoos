@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tattoos - tradtrash</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #5a0000;
+            color: white;
+        }
+
+        header {
+            position: relative;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .logo {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            width: 120px;
+            height: auto;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        /* Galería */
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .galeria img {
+            width: 220px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #3a3a3a;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>tradtrash</h1>
+        <img src="diablo tradtrash.png" alt="logo" class="logo">
+    </header>
+
+    <main>
+        <h2>Tattoos</h2>
+
+        <div class="galeria">
+            <img src="ajies.jpg">
+            <img src="IMG_20230824_161153063.jpg">
+            <img src="IMG_20231129_014848647.jpg">
+            <img src="IMG_20240930_131412_733.webp">
+            <img src="IMG_20250423_215036387.jpg">
+            <img src="IMG_20241229_231802741.jpg">
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 FISURAS S.A ® - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
