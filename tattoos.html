@@ -43,7 +43,7 @@
         .galeria img {
             width: 100%;
             aspect-ratio: 1 / 1;
-            object-fit: cover; /* evita que se deformen */
+            object-fit: cover; /* SIEMPRE cuadradas sin deformar */
             border-radius: 10px;
             transition: transform 0.3s;
         }
@@ -82,12 +82,23 @@
         <h2>Tattoos</h2>
 
         <div class="galeria">
-            <img src="ajies.jpg">
-            <img src="IMG_20230824_161153063.jpg">
-            <img src="IMG_20231129_014848647.jpg">
-            <img src="IMG_20240930_131412_733.webp">
-            <img src="IMG_20250423_215036387.jpg">
-            <img src="IMG_20241229_231802741.jpg">
+            <!-- Viejas -->
+            <img src="ajies.jpg" loading="lazy">
+            <img src="IMG_20230824_161153063.jpg" loading="lazy">
+            <img src="IMG_20231129_014848647.jpg" loading="lazy">
+            <img src="IMG_20240930_131412_733.webp" loading="lazy">
+            <img src="IMG_20250423_215036387.jpg" loading="lazy">
+            <img src="IMG_20241229_231802741.jpg" loading="lazy">
+
+            <!-- Nuevas tattoos -->
+            <img src="tattoo1.jfif" loading="lazy">
+            <img src="tattoo2.jfif" loading="lazy">
+            <img src="tattoo3.jfif" loading="lazy">
+            <img src="tattoo4.jfif" loading="lazy">
+            <img src="tattoo5.jfif" loading="lazy">
+            <img src="tattoo6.jfif" loading="lazy">
+            <img src="tattoo7.jfif" loading="lazy">
+            <img src="tattoo8.jfif" loading="lazy">
         </div>
     </main>
 
