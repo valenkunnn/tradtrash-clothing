@@ -41,30 +41,31 @@
             font-size: 14px;
         }
 
-        /* Botón con imagen */
+        /* BOTÓN GRANDE TIPO BLOQUE */
         .btn-tattoos {
-            display: inline-block;
-            cursor: pointer;
+            display: block;
+            width: 100%;
             margin-top: 20px;
-            text-align: center;
             text-decoration: none;
         }
 
         .btn-tattoos img {
-            width: 200px;
-            border-radius: 10px;
-            display: block;
+            width: 100%;
+            aspect-ratio: 1 / 1; /* cuadrado */
+            object-fit: cover;
+            border-radius: 12px;
         }
 
         .btn-tattoos span {
             display: block;
-            margin-top: 8px;
-            font-size: 16px;
+            margin-top: 10px;
+            font-size: 20px;
+            text-align: center;
             color: white;
         }
 
-        .btn-tattoos:hover {
-            transform: scale(1.05);
+        .btn-tattoos:hover img {
+            transform: scale(1.03);
             transition: 0.3s;
         }
     </style>
@@ -80,9 +81,9 @@
     <main>
         <h2>Bienvenido</h2>
 
-        <!-- BOTÓN TATTOOS FUNCIONANDO -->
+        <!-- BOTÓN TATTOOS -->
         <a href="tattoos.html" class="btn-tattoos">
-            <img src="IMG_20230824_161153063.jpg" alt="Tattoos">
+            <img src="tattoo1.jfif" alt="Tattoos">
             <span>Tattoos</span>
         </a>
 
